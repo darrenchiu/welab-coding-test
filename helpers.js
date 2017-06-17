@@ -1,12 +1,12 @@
 module.exports = {
   // to mark the non-existent seats as -1
   cancelNonExistentSeats: function (seatingPlan, seatMap, maxRow) {
-    totalSeatInPreviousBlocks = 0;
+    var totalSeatInPreviousBlocks = 0;
     for (i = 0; i < seatMap.length; i++) {
-      startToCancelRow = seatMap[i][1];
-      endToCancelRow = maxRow;
-      startToCancelCol = totalSeatInPreviousBlocks;
-      endToCancelCol = totalSeatInPreviousBlocks + seatMap[i][0];
+      const startToCancelRow = seatMap[i][1];
+      const endToCancelRow = maxRow;
+      const startToCancelCol = totalSeatInPreviousBlocks;
+      const endToCancelCol = totalSeatInPreviousBlocks + seatMap[i][0];
 
       for (j = startToCancelRow; j < endToCancelRow; j++) {
         for (k = startToCancelCol; k < endToCancelCol; k++) {
@@ -17,8 +17,8 @@ module.exports = {
     }
   },
   getAisleCol: function (seatMap) {
-    aisleCol = [];
-    totalSeatInPreviousBlocks = 0;
+    var aisleCol = [];
+    var totalSeatInPreviousBlocks = 0;
     for (i = 0; i < seatMap.length; i++) {
       // leftmost block with 1 aisle seat
       if (i == 0) {
@@ -38,14 +38,14 @@ module.exports = {
     return aisleCol;
   },
   getMaxCol: function (seatMap) {
-    sum = 0;
+    var sum = 0;
     for (i = 0; i < seatMap.length; i++) {
       sum += seatMap[i][0];
     }
     return sum;
   },
   getMaxRow: function (seatMap) {
-    max = 0;
+    var max = 0;
     for (i = 0; i < seatMap.length; i++) {
       if (seatMap[i][1] > max) {
         max = seatMap[i][1];

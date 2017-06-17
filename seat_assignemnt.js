@@ -1,15 +1,15 @@
 const helpers = require('./helpers');
 
 // input to the program
-seatMap = [[3, 2], [4, 3], [2, 3], [3, 4]];
-numOfPassengers = 30;
+const seatMap = [[3, 2], [4, 3], [2, 3], [3, 4]];
+const numOfPassengers = 30;
 
 // setting up the computational model
-maxCol = helpers.getMaxCol(seatMap); // number of columns in the plan
-maxRow = helpers.getMaxRow(seatMap); // max number of rows in the plane
-aisleCol = helpers.getAisleCol(seatMap); // column of aisle seats
-windowsCol = [0, maxCol - 1];  // column number of window seats
-seatingPlan = helpers.zeros([maxRow, maxCol]);   // initial seating map assuming all seat are available
+const maxCol = helpers.getMaxCol(seatMap); // number of columns in the plan
+const maxRow = helpers.getMaxRow(seatMap); // max number of rows in the plane
+const aisleCol = helpers.getAisleCol(seatMap); // column of aisle seats
+const windowsCol = [0, maxCol - 1];  // column number of window seats
+var seatingPlan = helpers.zeros([maxRow, maxCol]);   // initial seating map assuming all seat are available
 helpers.cancelNonExistentSeats(seatingPlan, seatMap, maxRow);    // cancel out the non-existent seats
 
 // seat assignment process
