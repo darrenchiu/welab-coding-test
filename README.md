@@ -12,8 +12,17 @@ Lastly, we will search for best seats for each passengers by:
 3. going row by row to look for center seats from left to right
 
 ### Running Instructions ###
-On any machine with node installed, simply run 
-```node seatAssignemnt.js```
+On any machine with node installed, run the following to setup the environment. You may skip this step if you don't plan to run unit tests
+```npm install```
+
+To run "For each passenger, search for best seat" algorithm
+`node seatAssignment.js`
+
+To run "Seat the passengers one by on" algorithm
+`node seatAssignment2.js`
+
+To run unit tests
+` ./node_modules/mocha/bin/mocha`
 
 ### Input ###
 There are two input for the program
