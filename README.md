@@ -16,13 +16,13 @@ On any machine with node installed, run the following to setup the environment. 
 ```npm install```
 
 To run "For each passenger, search for best seat" algorithm
-`node seatAssignment.js`
+```node seatAssignment.js```
 
 To run "Seat the passengers one by on" algorithm
-`node seatAssignment2.js`
+```node seatAssignment2.js```
 
 To run unit tests
-` ./node_modules/mocha/bin/mocha`
+```./node_modules/mocha/bin/mocha```
 
 ### Input ###
 There are two input for the program
