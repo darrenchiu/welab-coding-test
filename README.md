@@ -13,7 +13,7 @@ Lastly, we will search for best seats for each passengers by:
 
 ### Running Instructions ###
 On any machine with node installed, simply run 
-```node seat_assignemnt.js```
+```node seatAssignemnt.js```
 
 ### Input ###
 There are two input for the program
