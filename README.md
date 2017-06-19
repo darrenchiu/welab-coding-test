@@ -50,5 +50,5 @@ Output is a seating plan represeted by a 2D array, with
 ```
 
 ### Limitations ###
-1. No automated testing is set up.
+1. Only part of the functions are unit tested
 2. The program assumes that there are always enough seats for all passengers, i.e. number of seats >= number of passengers
